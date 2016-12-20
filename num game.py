@@ -21,6 +21,14 @@ while boo != True:
         boo = True
 
 def game():
+
+    count = 0
+    
+        
+    number = random.randint(1, 100)
+    print("Welcome to the Guessing Game!")
+    print("Guess a number:")
+    
     x = input()
     boo = False
     
@@ -36,11 +44,17 @@ def game():
         elif int(x) == number:
             print ("congrats, u win")
             boo = True
-        return
+        
             
 a = input("Would you like to play again?")
+
 if a == ("yes"):
+    game()
+
+elif a == ("y"):
     game()
             
 else:
-    print("Goodbye")
+    boo = True
+print("Goodbye")
+
